@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cross-Text Themes · Lit Study Guide</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  body { --accent: #4A7A4A; --accent-bg: #EBF4EB; }
+  .hero { background: #080F08; color: var(--off-white); }
+  .hero .hero-label { color: #6AAD6A; }
+  .hero .hero-desc { color: #6A8A6A; }
+  .hero h1 { color: var(--off-white); }
+  .theme-block {
+    border-top: 3px solid var(--accent);
+    margin-bottom: 48px;
+    padding-top: 24px;
+  }
+  .theme-block-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .theme-block-subtitle {
+    font-family: 'DM Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .theme-block-intro {
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 820px;
+    margin-bottom: 24px;
+    font-style: italic;
+    color: #2A2520;
+  }
+  .book-breakdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  @media (max-width: 700px) { .book-breakdown { grid-template-columns: 1fr; } }
+  .book-card {
+    padding: 18px 20px;
+    border-radius: 2px;
+    border: 1px solid var(--rule);
+  }
+  .book-card-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 8.5px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .book-card-body { font-size: 13px; line-height: 1.7; color: #2A2520; }
+  .sula-card   { background: #FDF0EB; border-color: #C04A2A; }
+  .sula-card   .book-card-label { color: #C04A2A; }
+  .fences-card { background: #EBF2F9; border-color: #2A5C8A; }
+  .fences-card .book-card-label { color: #2A5C8A; }
+  .gatsby-card { background: #FBF6E8; border-color: #B89A2A; }
+  .gatsby-card .book-card-label { color: #B89A2A; }
+
+  .synthesis-box {
+    background: #080F08;
+    color: #D0C8B0;
+    padding: 20px 24px;
+    border-radius: 2px;
+    margin-top: 12px;
+  }
+  .synthesis-box-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6AAD6A;
+    margin-bottom: 8px;
+  }
+  .synthesis-box-body {
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: #C0B8A8;
+  }
+
+  .exam-prompt {
+    border: 1px solid var(--accent);
+    background: var(--accent-bg);
+    padding: 20px 24px;
+    border-radius: 2px;
+    margin-bottom: 14px;
+  }
+  .exam-prompt-q {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .exam-prompt-a { font-size: 13px; line-height: 1.75; color: #2A2520; }
+  .exam-prompt-works {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body class="page-themes">
+
+<nav class="sitenav">
+  <a class="sitenav-brand" href="index.html">Lit Guide</a>
+  <div class="sitenav-links">
+    <a href="sula.html">Sula</a>
+    <a href="fences.html">Fences</a>
+    <a href="gatsby.html">The Great Gatsby</a>
+    <a href="themes.html" class="active">Cross-Text Themes</a>
+  </div>
+</nav>
+
+<div class="accent-bar"></div>
+<div class="hero">
+  <div class="content" style="padding-top:0; padding-bottom:0;">
+    <div class="hero-label fade-up">Comparative Analysis</div>
+    <h1 class="fade-up fade-up-1">Cross-Text<br><em>Themes &amp; Connections</em></h1>
+    <p class="hero-desc fade-up fade-up-2">Deep connections across <em>Sula</em>, <em>Fences</em>, and <em>The Great Gatsby</em> — with sample exam approaches for each theme.</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="section-label">How to use this page</div>
+  <div class="card" style="margin-bottom: 40px;">
+    <div class="card-body">Each section below isolates a theme, shows exactly how each of the three texts handles it, then gives you a <strong>Synthesis</strong> — the deeper argument that connects all three. The <strong>Exam Prompts</strong> at the bottom are the most likely question types, with thesis approaches. The strongest in-class essays pick 2–3 specific moments across texts (not just general claims) and build a single arguable claim, not a list of similarities.</div>
+  </div>
+
+  <!-- THEME 1: THE AMERICAN DREAM -->
+  <div class="theme-block">
+    <div class="theme-block-title">1. The American Dream — Promise &amp; Betrayal</div>
+    <div class="theme-block-subtitle">Gatsby · Fences · (Sula adjacent)</div>
+    <div class="theme-block-intro">All three texts engage with America's foundational promise — that hard work, talent, and desire can remake a person and unlock prosperity. All three expose the lie inside that promise, but they expose different lies for different people.</div>
+
+    <div class="book-breakdown">
+      <div class="book-card sula-card">
+        <div class="book-card-label">Sula — Morrison</div>
+        <div class="book-card-body">The Dream barely applies to the Bottom's Black residents — it was never extended to them in the first place. The neighborhood itself is founded on a trick played on a freed slave. By 1965 it's demolished for a golf course. Morrison doesn't mourn the Dream; she shows it was never offered. Sula doesn't pursue the Dream — she opts out of every version of it. The most pointed critique: the Bottom's destruction comes not from failure to dream, but from a system designed to displace.</div>
+      </div>
+      <div class="book-card fences-card">
+        <div class="book-card-label">Fences — Wilson</div>
+        <div class="book-card-body">Troy Maxson is the Dream's most bitter casualty: he had the talent, the work ethic, and the ambition — and was excluded by race from the arena (baseball) where it could have paid off. By the time integration came, he was too old. His bitterness is not weakness; it is the rational response to a rigged game. He then passes his bitterness to Cory — who does have access to opportunity — thus becoming the very barrier the Dream erected against him. The Dream's cruelest trick: the excluded become their own gatekeepers.</div>
+      </div>
+      <div class="book-card gatsby-card">
+        <div class="book-card-label">Gatsby — Fitzgerald</div>
+        <div class="book-card-body">Gatsby achieves the Dream's material form — mansion, parties, wealth — and discovers it is structurally hollow. He cannot buy his way into old money, cannot purchase the past, cannot earn Daisy's real love. His Dream is not blocked by race but by class: no matter how much new money accumulates, it cannot become inherited belonging. The green light is always across the water. The final image — boats against the current — frames America itself as a Dream that runs backward.</div>
+      </div>
+    </div>
+
+    <div class="synthesis-box">
+      <div class="synthesis-box-label">Synthesis — The Deeper Argument</div>
+      <div class="synthesis-box-body">Fitzgerald shows the Dream is structurally inaccessible by class; Wilson shows it is structurally inaccessible by race; Morrison shows it was never structurally offered to Black Americans at all — which makes it not a dream deferred (Langston Hughes) but a dream that was always for someone else. Together, the three texts argue that the American Dream is not a universal promise but a selective one, and that the selectivity is the point: it requires people to believe they failed personally so they don't see they were excluded systematically.</div>
+    </div>
+  </div>
+
+  <!-- THEME 2: FATHERS, MOTHERS, AND INHERITED DAMAGE -->
+  <div class="theme-block">
+    <div class="theme-block-title">2. Parents, Children &amp; The Inheritance of Damage</div>
+    <div class="theme-block-subtitle">All three texts</div>
+    <div class="theme-block-intro">Every text in this trio is, at some level, about what parents do to children — not always from cruelty, often from love, sometimes from wounds they never chose. The damage passes. The question each text asks differently is: can it be stopped?</div>
+
+    <div class="book-breakdown">
+      <div class="book-card sula-card">
+        <div class="book-card-label">Sula — Morrison</div>
+        <div class="book-card-body">Eva's destructive love (burning Plum, watching Hannah) flows directly into Sula's cold watching eye. Hannah's indifference ("I love Sula but I don't like her") becomes Sula's wound. The Peace women love enormously and damage each generation with the same gesture. Sula breaks the chain by refusing to become a mother — but that refusal also means the chain ends with her death. The novel asks: is refusing to reproduce trauma a kind of freedom, or a kind of extinction?</div>
+      </div>
+      <div class="book-card fences-card">
+        <div class="book-card-label">Fences — Wilson</div>
+        <div class="book-card-body">This is the text's central engine. Troy's father was brutal and abandoning. Troy becomes hard in response, then imposes that hardness on Cory — who he loves, but cannot show love to without it becoming control. The fence Troy builds to protect his family becomes the wall Cory must escape. The final scene — Cory and Raynell singing their grandfather's old song — suggests the inheritance isn't only damage: there is also voice, music, the capacity to continue. But it doesn't erase what Troy took from Cory.</div>
+      </div>
+      <div class="book-card gatsby-card">
+        <div class="book-card-label">Gatsby — Fitzgerald</div>
+        <div class="book-card-body">Gatsby is an orphan of class — he comes from nothing and his "parents" are the American myths he absorbed. He is self-made and self-destroyed. Tom and Daisy's damage flows not from trauma but from privilege: they inherited carelessness. Daisy abandons Gatsby partly because she was never taught that her choices have consequences for people below her class. The Buchanans' child (barely present in the novel) is their most chilling inheritance: a daughter born into a world her parents have already spoiled, to be "a beautiful little fool."</div>
+      </div>
+    </div>
+
+    <div class="synthesis-box">
+      <div class="synthesis-box-label">Synthesis — The Deeper Argument</div>
+      <div class="synthesis-box-body">All three texts show that what parents pass to children is not primarily money or biology but a relationship to the world: Eva's daughters inherit her watching; Troy's sons inherit his hardness; Daisy's daughter inherits her mother's beautiful uselessness. Morrison and Wilson write from inside the damage — their characters are conscious of it and cannot escape it. Fitzgerald writes the damage as unconscious — the Buchanans don't know they are breaking things. This distinction is the texts' sharpest divergence: trauma in Sula and Fences is felt and lived; in Gatsby, it is performed without awareness.</div>
+    </div>
+  </div>
+
+  <!-- THEME 3: IDENTITY AND SELF-INVENTION -->
+  <div class="theme-block">
+    <div class="theme-block-title">3. Identity, Self-Invention &amp; The Cost of Becoming</div>
+    <div class="theme-block-subtitle">All three texts</div>
+    <div class="theme-block-intro">Each text features at least one character who attempts to construct an identity from scratch — to become someone the world didn't plan for them to be. All three show that this is possible, partial, and costly.</div>
+
+    <div class="book-breakdown">
+      <div class="book-card sula-card">
+        <div class="book-card-label">Sula — Morrison</div>
+        <div class="book-card-body">Sula is Morrison's most radical experiment in selfhood: a Black woman who creates herself entirely from within, refusing every available role. Her freedom is real and her identity is genuine — but it has no social form, no community to receive it. She can only be read as deviance. Helene Wright, by contrast, reinvents herself through total conformity: she builds a new self by erasing everything she came from. Both strategies fail to produce belonging. Morrison's implication: a Black woman's self-invention in mid-century America will always be read through someone else's lens.</div>
+      </div>
+      <div class="book-card fences-card">
+        <div class="book-card-label">Fences — Wilson</div>
+        <div class="book-card-body">Troy constructed his identity around baseball — his body, his skill, his sense of himself as exceptional. When that arena was closed to him, he rebuilt himself as a provider and survivor, but the foundation (his greatness, his missed chance) never stopped pulling at him. His identity is built on a wound. Lyons builds himself around music, which Troy can't respect. Cory is forced to rebuild himself from nothing after Troy destroys his football prospects — he joins the Marines, reinventing himself through the only institution that will have him.</div>
+      </div>
+      <div class="book-card gatsby-card">
+        <div class="book-card-label">Gatsby — Fitzgerald</div>
+        <div class="book-card-body">James Gatz's reinvention as Jay Gatsby is the most complete self-invention in American literature — new name, new voice, new history, new wealth. But it is entirely contingent on external validation: Daisy's acceptance is the only thing that could make Gatsby real to himself. Without her, the whole construction is just a performance. When Tom strips away the facade ("Mr. Nobody from Nowhere"), Gatsby's invented self collapses. He is killed not as Jay Gatsby but as the ghost of James Gatz, alone in his pool, waiting for a call that doesn't come.</div>
+      </div>
+    </div>
+
+    <div class="synthesis-box">
+      <div class="synthesis-box-label">Synthesis — The Deeper Argument</div>
+      <div class="synthesis-box-body">All three texts show that self-invention is possible but precarious: it requires either social acceptance (Gatsby needs Daisy; Helene needs the Bottom's approval) or a radical willingness to exist without it (Sula, Troy). The characters who build their identities around external validation are destroyed when that validation is withdrawn. The characters who build from within (Sula, to some extent Troy) are destroyed by isolation. Morrison's conclusion is the darkest: there is no safe architecture for a self — only degrees of exposure.</div>
+    </div>
+  </div>
+
+  <!-- THEME 4: PLACE AND BELONGING -->
+  <div class="theme-block">
+    <div class="theme-block-title">4. Place, Community &amp; The Politics of Belonging</div>
+    <div class="theme-block-subtitle">All three texts</div>
+    <div class="theme-block-intro">Every text is acutely geographic — where characters live, what those places mean, and who gets to belong in them is never neutral. Place is always political.</div>
+
+    <div class="book-breakdown">
+      <div class="book-card sula-card">
+        <div class="book-card-label">Sula — Morrison</div>
+        <div class="book-card-body">The Bottom is founded on a lie, is vibrant despite its conditions, and is eventually erased for a golf course — a white leisure space. It is a place that never truly belonged to its residents. Within it, Sula is doubly displaced: rejected by the community she was born into. Her return to Medallion is a return to a place that has no room for her. When she dies, the community's loss of its scapegoat precipitates literal physical destruction (the tunnel collapse). The Bottom cannot survive without the thing it hated most.</div>
+      </div>
+      <div class="book-card fences-card">
+        <div class="book-card-label">Fences — Wilson</div>
+        <div class="book-card-body">The Maxson yard is the entire world of the play — every scene takes place in it. It is both refuge and cage. Troy bought this house with Gabriel's disability money — a moral compromise that haunts the property. The yard is where Troy holds court, tells his stories, builds the fence, and dies. It is a Black man's small sovereignty in a city that denies him larger ones. The neighborhood (Hill District) is the community Troy is embedded in — the Black working-class world where he has status that the wider city would never grant him.</div>
+      </div>
+      <div class="book-card gatsby-card">
+        <div class="book-card-label">Gatsby — Fitzgerald</div>
+        <div class="book-card-body">East Egg and West Egg encode belonging as birthright. Gatsby's West Egg mansion is physically larger than the Buchanans' East Egg home, but it cannot purchase what East Egg represents: inherited legitimacy. The Valley of Ashes is the geography of exclusion — the place for people who belong nowhere else. New York City is the only neutral ground, which is why affairs and deals happen there. Fitzgerald maps class onto geography with mathematical precision: you can always tell who someone is by where they live.</div>
+      </div>
+    </div>
+
+    <div class="synthesis-box">
+      <div class="synthesis-box-label">Synthesis — The Deeper Argument</div>
+      <div class="synthesis-box-body">In all three texts, the places where characters live are assigned — not chosen — by systems of power they cannot fully control. The Bottom was given as a trick; the Hill District is where Pittsburgh put its Black workers; East/West Egg encodes class inheritance. The characters who try to move between places (Gatsby crossing to East Egg; Sula returning to the Bottom after years away; Helene visiting New Orleans) are all exposed and diminished by the attempt. Place in these texts is not backdrop — it is a mechanism of social control.</div>
+    </div>
+  </div>
+
+  <!-- THEME 5: WHAT WOMEN OWE THE WORLD -->
+  <div class="theme-block">
+    <div class="theme-block-title">5. Women, Expectation &amp; The Cost of Refusal</div>
+    <div class="theme-block-subtitle">Sula · Fences · Gatsby</div>
+    <div class="theme-block-intro">Each text has at its center a woman whose value to the narrative is partly defined by what she refuses or accepts. The texts differ sharply in how much interiority they grant their female characters — which itself is an argument.</div>
+
+    <div class="book-breakdown">
+      <div class="book-card sula-card">
+        <div class="book-card-label">Sula — Morrison</div>
+        <div class="book-card-body">Morrison gives her women the most interiority of any author here. Sula, Nel, Eva, Hannah, and Rose (in Fences) are all rendered from inside. Sula's refusal of every female role is the novel's central act. Nel's acceptance of every female role is equally examined. Morrison refuses to privilege either choice — both women suffer, both have moments of freedom and moments of loss. The novel's deepest argument: the problem is not individual women's choices but a social structure that makes freedom and belonging mutually exclusive for them.</div>
+      </div>
+      <div class="book-card fences-card">
+        <div class="book-card-label">Fences — Wilson</div>
+        <div class="book-card-body">Rose is the play's moral center and its most restrained figure — we see everything through Troy's lens until she breaks open in Act Two. Her speech after Troy's confession is the play's emotional turning point: eighteen years of standing with him, and he has still treated her as backdrop. Her acceptance of Raynell — "she's innocent, and you can't visit the sins of the father on the child" — is both moral greatness and heartbreak. She builds a life inside the fence Troy never finished building.</div>
+      </div>
+      <div class="book-card gatsby-card">
+        <div class="book-card-label">Gatsby — Fitzgerald</div>
+        <div class="book-card-body">Fitzgerald gives his women the least interiority. Daisy is filtered almost entirely through Nick's gaze and Gatsby's obsession — we almost never access what she actually thinks or feels. Jordan has more agency but is still ultimately a satellite character. Myrtle, who has the most vitality, is given the least narrative space and is literally killed. Fitzgerald's novel, written by a man of the 1920s, is also a document of how women were rendered: as symbols, as objects of pursuit, as casualties.</div>
+      </div>
+    </div>
+
+    <div class="synthesis-box">
+      <div class="synthesis-box-label">Synthesis — The Deeper Argument</div>
+      <div class="synthesis-box-body">Reading these three texts together exposes how narrative form is itself a moral argument about women. Morrison gives her women full interiority and complex agency. Wilson gives Rose transformative power within a play that is structurally Troy's. Fitzgerald largely refuses his women subjectivity. The woman who is most alive on the page in Gatsby (Myrtle) is the one killed first and mourned least. A strong comparative essay might argue that the degree to which each text grants women interiority is itself a statement about what its culture believed women owed the world — and what the world owed them back.</div>
+    </div>
+  </div>
+
+  <!-- THEME 6: DEATH AND HOW CHARACTERS FACE IT -->
+  <div class="theme-block">
+    <div class="theme-block-title">6. Death — Confronted, Avoided, Administered</div>
+    <div class="theme-block-subtitle">All three texts</div>
+    <div class="theme-block-intro">Death is not background in any of these texts — it is a presence, a character, a philosophical problem. Each text has a completely different relationship to mortality.</div>
+
+    <div class="book-breakdown">
+      <div class="book-card sula-card">
+        <div class="book-card-label">Sula — Morrison</div>
+        <div class="book-card-body">Death in Sula is intimate and strange. Shadrack institutionalizes it (National Suicide Day). Eva administers it (Plum). Sula witnesses it (Hannah, Chicken Little) without flinching. Sula herself dies slowly and studies the process: "there is just a minute while I'm not breathing but I'm still me." Death in this novel is part of the fabric of Black life — not dramatic interruption but constant presence that must be domesticated or it will destroy you.</div>
+      </div>
+      <div class="book-card fences-card">
+        <div class="book-card-label">Fences — Wilson</div>
+        <div class="book-card-body">Troy personifies Death as a wrestling opponent — a man he met and bested. This is not magical realism but coping strategy: if Death is a person, you can fight it; if it's random, you can't. Troy's death comes quietly, doing his exercises in the yard. The gap between how he imagined his fight with Death (epic, hand-to-hand) and how it actually comes (ordinary, alone) is the play's quietest tragedy. Gabriel blowing his broken trumpet opens the gates of heaven — and that's the only victory the play offers.</div>
+      </div>
+      <div class="book-card gatsby-card">
+        <div class="book-card-label">Gatsby — Fitzgerald</div>
+        <div class="book-card-body">Gatsby's death is grotesque in its smallness: shot by a man who had the wrong information, floating in a pool, waiting for a phone call. No one comes to his funeral except Nick, the owl-eyed man, and his father. The green light still blinks. Fitzgerald uses Gatsby's death to strip the Dream of its glamour — the man who threw the century's greatest parties dies attended by almost nobody. Myrtle's death is more violent and more public; her grief (George's) is instrumentalized by Tom to destroy Gatsby. Both deaths are collateral damage of the careless rich.</div>
+      </div>
+    </div>
+
+    <div class="synthesis-box">
+      <div class="synthesis-box-label">Synthesis — The Deeper Argument</div>
+      <div class="synthesis-box-body">Each text uses death to deliver its final moral verdict. In Sula, death is always present because Black life in America is always precarious — it must be met directly or it will undo you (hence Shadrack, hence Eva, hence the tunnel). In Fences, Troy's death reveals the gap between the epic self he imagined and the quiet, ordinary man he actually was — and Wilson treats this gap with compassion rather than irony. In Gatsby, death exposes the Dream's total indifference to people: Gatsby's party guests don't come to his funeral; Tom and Daisy don't send flowers; the green light keeps blinking. The three texts' deaths are their endings, but also their arguments: death in Morrison teaches endurance, in Wilson demands reckoning, in Fitzgerald reveals emptiness.</div>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <div class="section-label">Quick Comparison Table</div>
+  <div style="overflow-x:auto; margin-bottom:48px;">
+    <table class="connections-table">
+      <thead>
+        <tr>
+          <th>Theme / Question</th>
+          <th style="color:#E8A888;">Sula</th>
+          <th style="color:#88A8E8;">Fences</th>
+          <th style="color:#E8D888;">The Great Gatsby</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The American Dream</td>
+          <td>Was never offered to Black residents; the Bottom itself is proof</td>
+          <td>Offered, then revoked by race; Troy is its most bitter casualty</td>
+          <td>Achieved materially, hollow structurally; blocked by class not race</td>
+        </tr>
+        <tr>
+          <td>Self-invention</td>
+          <td>Sula invents herself with no audience; Helene invents herself through conformity</td>
+          <td>Troy built himself around baseball; when that's gone, he has no blueprint</td>
+          <td>Gatsby = most complete reinvention; collapses without Daisy's validation</td>
+        </tr>
+        <tr>
+          <td>What destroys the protagonist</td>
+          <td>Community's inability to hold her; illness; her own freedom</td>
+          <td>His own wound, passed to his son; infidelity; time</td>
+          <td>His belief the past can be repeated; class he can't buy into; a stray bullet</td>
+        </tr>
+        <tr>
+          <td>Women's interiority</td>
+          <td>Maximum — Morrison's women are the most fully rendered</td>
+          <td>Rose has powerful moments but the play is structured around Troy</td>
+          <td>Minimum — Daisy filtered through Nick/Gatsby; Myrtle most alive, killed first</td>
+        </tr>
+        <tr>
+          <td>Relationship to the past</td>
+          <td>The Bottom will be erased; Sula refuses nostalgia</td>
+          <td>Troy is trapped in the past; Cory must escape it to survive</td>
+          <td>Gatsby's entire project is recovering the past; "can't repeat the past? of course you can"</td>
+        </tr>
+        <tr>
+          <td>How children are damaged</td>
+          <td>Eva's watching eye → Hannah → Sula; the damage mutates</td>
+          <td>Troy's hardness → Cory can't play football; direct, conscious harm</td>
+          <td>Daisy's daughter will be "a beautiful little fool"; unconscious, class-inherited</td>
+        </tr>
+        <tr>
+          <td>The friendship/bond at center</td>
+          <td>Sula &amp; Nel — the novel's real love story</td>
+          <td>Troy &amp; Bono — male friendship as witness and conscience</td>
+          <td>Nick &amp; Gatsby — admiration bordering on obsession; Nick as Gatsby's only mourner</td>
+        </tr>
+        <tr>
+          <td>Death's role</td>
+          <td>Domestic, constant, must be ritualized (Shadrack) to survive</td>
+          <td>Personified as opponent; Troy dies in the gap between epic and ordinary</td>
+          <td>Exposes the Dream's emptiness — Gatsby's pool, Myrtle's road</td>
+        </tr>
+        <tr>
+          <td>The fence / barrier symbol</td>
+          <td>The Bottom itself — built on a lie, then erased</td>
+          <td>The literal fence — keeps in or keeps out depending on who built it</td>
+          <td>The bay between West and East Egg — the green light always across water</td>
+        </tr>
+        <tr>
+          <td>Who survives?</td>
+          <td>Nel — alone, finally understanding what she lost</td>
+          <td>Rose, Cory, Raynell — the family Troy damaged continues</td>
+          <td>Tom and Daisy — the careless rich always survive; Nick retreats; Gatsby, Myrtle, George die</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SAMPLE EXAM PROMPTS -->
+  <div class="section-label">Sample Exam Prompts &amp; Approaches</div>
+
+  <div class="exam-prompt">
+    <div class="exam-prompt-works">Sula + Fences + Gatsby</div>
+    <div class="exam-prompt-q">"In each of these texts, the protagonist is ultimately destroyed by the very thing that made them exceptional. Discuss."</div>
+    <div class="exam-prompt-a"><strong>Approach:</strong> Sula's radical freedom is what makes her exceptional and what makes the community reject her — she dies without belonging. Troy's enormous will and capacity to survive is what made him a great ballplayer and what makes him crush Cory's future — he cannot stop fighting even when the fight is his own son. Gatsby's extraordinary capacity for hope and self-reinvention is what made him great and what killed him — he could not stop believing in a dream the world had already moved past. Thesis: each text suggests that what we call greatness in a person and what destroys them are often the same quality operating in different contexts.</div>
+  </div>
+
+  <div class="exam-prompt">
+    <div class="exam-prompt-works">Fences + Gatsby</div>
+    <div class="exam-prompt-q">"Both Troy Maxson and Jay Gatsby are men who feel cheated by America. How do their responses to this feeling differ, and what does each text suggest about the American Dream?"</div>
+    <div class="exam-prompt-a"><strong>Approach:</strong> Troy's cheating is racial and real — his exclusion from baseball was systematic. Gatsby's cheating is about class — he cannot buy his way into inherited belonging. Troy responds with hardness and transmission of bitterness to his son. Gatsby responds with obsessive reconstruction of the past. Troy's dream is backward-looking (what he should have had); Gatsby's dream is also backward-looking (what he almost had). Neither can move forward. The texts together argue the Dream always faces backward in America — it is defined by what was lost or denied, not what's ahead.</div>
+  </div>
+
+  <div class="exam-prompt">
+    <div class="exam-prompt-works">Sula + Fences</div>
+    <div class="exam-prompt-q">"In both Sula and Fences, the parent-child relationship is the primary vehicle for exploring how trauma is transmitted across generations. Compare how Morrison and Wilson handle this transmission."</div>
+    <div class="exam-prompt-a"><strong>Approach:</strong> Morrison's transmission is diffuse and unconscious — Eva doesn't know she's teaching Sula to watch coldly; Hannah doesn't know her admission of not liking Sula will wound her for life. Wilson's transmission is concrete and visible — Troy directly blocks Cory's football scholarship, directly imposes his own wound on his son's future. Morrison shows how damage seeps; Wilson shows how damage strikes. Both suggest the transmission is not inevitable — but both also show how hard it is to interrupt. A strong essay would compare Eva-Hannah-Sula to Troy-Cory and then ask: who has more agency to break the chain?</div>
+  </div>
+
+  <div class="exam-prompt">
+    <div class="exam-prompt-works">All three texts</div>
+    <div class="exam-prompt-q">"Across these three texts, place is never neutral — it is always a mechanism of power. Discuss how setting functions to enforce or resist social hierarchy."</div>
+    <div class="exam-prompt-a"><strong>Approach:</strong> The Bottom (built on a trick; erased for a golf course), the Maxson yard (small Black sovereignty purchased with a brother's disability check), and the East/West Egg geography (class encoded as water) all show that where characters live is determined by forces larger than their choices. The characters who try to cross geographic lines — Gatsby sailing toward East Egg, Helene traveling to New Orleans, Cory leaving the Hill District for the Marines — are all exposed and diminished. Place enforces; mobility punishes. The only escape is Sula's — she leaves for 10 years and returns changed — but the Bottom hasn't changed for her, and she dies there.</div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <span>Cross-Text Themes · Sula · Fences · The Great Gatsby</span>
+  <a href="sula.html">← Sula</a>
+  <a href="fences.html">← Fences</a>
+  <a href="gatsby.html">← Gatsby</a>
+</footer>
+
+</body>
+</html>
