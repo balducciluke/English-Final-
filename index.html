@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lit Study Guide · Sula, Fences, Gatsby</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  body { --accent: #4A4A4A; --accent-bg: #F2EDE4; }
+
+  .index-hero {
+    background: #0A0908;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .index-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 20% 60%, rgba(192,74,42,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 50% at 80% 30%, rgba(42,92,138,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 50% 80%, rgba(184,154,42,0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .index-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #5A5248;
+    margin-bottom: 24px;
+  }
+  .index-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(48px, 8vw, 96px);
+    font-weight: 300;
+    color: #F0EAE0;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+  }
+  .index-title em { font-style: italic; }
+  .index-sub {
+    font-size: 15px;
+    color: #7A7060;
+    max-width: 520px;
+    line-height: 1.75;
+    margin-bottom: 56px;
+  }
+  .index-books {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 900px;
+  }
+  @media (max-width: 700px) {
+    .index-hero { padding: 48px 24px; min-height: auto; }
+    .index-books { grid-template-columns: 1fr 1fr; }
+  }
+  .book-link {
+    display: block;
+    text-decoration: none;
+    padding: 24px 20px;
+    border: 1px solid #1E1C18;
+    border-radius: 2px;
+    transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    position: relative;
+    overflow: hidden;
+  }
+  .book-link:hover { transform: translateY(-2px); }
+  .book-link::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+  .book-link.sula   { }
+  .book-link.sula::before   { background: #C04A2A; }
+  .book-link.fences::before { background: #2A5C8A; }
+  .book-link.gatsby::before { background: #B89A2A; }
+  .book-link.themes::before { background: #4A7A4A; }
+  .book-link.sula:hover   { background: rgba(192,74,42,0.06); border-color: #C04A2A; }
+  .book-link.fences:hover { background: rgba(42,92,138,0.06); border-color: #2A5C8A; }
+  .book-link.gatsby:hover { background: rgba(184,154,42,0.06); border-color: #B89A2A; }
+  .book-link.themes:hover { background: rgba(74,122,74,0.06);  border-color: #4A7A4A; }
+
+  .book-link-number {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: #3A3830;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .book-link-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #E8DFC8;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .book-link-author {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5A5248;
+    margin-bottom: 10px;
+  }
+  .book-link-desc {
+    font-size: 11.5px;
+    color: #6A6258;
+    line-height: 1.6;
+  }
+  .book-link-arrow {
+    display: block;
+    margin-top: 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: #4A4840;
+    letter-spacing: 0.08em;
+    transition: color 0.15s;
+  }
+  .book-link.sula:hover   .book-link-arrow { color: #C04A2A; }
+  .book-link.fences:hover .book-link-arrow { color: #2A5C8A; }
+  .book-link.gatsby:hover .book-link-arrow { color: #B89A2A; }
+  .book-link.themes:hover .book-link-arrow { color: #4A7A4A; }
+
+  .index-footer {
+    position: absolute;
+    bottom: 32px;
+    left: 64px;
+    right: 64px;
+    display: flex;
+    gap: 32px;
+    font-family: 'DM Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    color: #3A3830;
+  }
+  @media (max-width: 700px) {
+    .index-footer { position: static; margin-top: 40px; left: auto; right: auto; flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<div class="index-hero">
+  <div class="index-label">AP / High School Literature · Final Exam Study Guide</div>
+
+  <h1 class="index-title">
+    Three<br><em>American</em><br>Voices
+  </h1>
+
+  <p class="index-sub">
+    Character maps, theme breakdowns, key quotes, and cross-text analysis for your in-class writing exam. Click any book to get started.
+  </p>
+
+  <div class="index-books">
+
+    <a href="sula.html" class="book-link sula fade-up fade-up-1">
+      <div class="book-link-number">01</div>
+      <div class="book-link-title">Sula</div>
+      <div class="book-link-author">Toni Morrison · 1973</div>
+      <div class="book-link-desc">The Bottom, Ohio. A woman who refuses every role the world offers her — and what it costs.</div>
+      <span class="book-link-arrow">Open guide →</span>
+    </a>
+
+    <a href="fences.html" class="book-link fences fade-up fade-up-2">
+      <div class="book-link-number">02</div>
+      <div class="book-link-title">Fences</div>
+      <div class="book-link-author">August Wilson · 1985</div>
+      <div class="book-link-desc">Pittsburgh, 1957. A great man who becomes the barrier he was always fighting against.</div>
+      <span class="book-link-arrow">Open guide →</span>
+    </a>
+
+    <a href="gatsby.html" class="book-link gatsby fade-up fade-up-3">
+      <div class="book-link-number">03</div>
+      <div class="book-link-title">The Great Gatsby</div>
+      <div class="book-link-author">F. Scott Fitzgerald · 1925</div>
+      <div class="book-link-desc">Long Island, 1922. The American Dream in human form — and the emptiness at its center.</div>
+      <span class="book-link-arrow">Open guide →</span>
+    </a>
+
+    <a href="themes.html" class="book-link themes fade-up fade-up-4">
+      <div class="book-link-number">04</div>
+      <div class="book-link-title">Cross-Text Themes</div>
+      <div class="book-link-author">Comparative Analysis</div>
+      <div class="book-link-desc">Six deep themes connecting all three texts, a full comparison table, and sample exam prompts.</div>
+      <span class="book-link-arrow">Open analysis →</span>
+    </a>
+
+  </div>
+
+  <div class="index-footer">
+    <span>Sula · Fences · The Great Gatsby</span>
+    <span>Characters · Symbols · Themes · Exam Tips</span>
+  </div>
+</div>
+
+</body>
+</html>
